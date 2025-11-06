@@ -34,4 +34,7 @@ class Funcionarios(models.Model):
         blank=False
     )
 
-    objectos = models.Manager()
+    def __str__(self):
+        return self.nome+" "+self.sobrenome
+    
+    objetos = models.Manager()
